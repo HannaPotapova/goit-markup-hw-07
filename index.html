@@ -46,51 +46,51 @@
             <!--Герой-->
             <section class="hero">
                 <div class="container">
-                    <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button data-modal-open class="btn primary">Заказать услугу</button>
+                    <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                    <button data-modal-open class="btn btn__primary">Заказать услугу</button>
                     <div data-modal class="backdrop is-hidden">
                         <div class="modal">
                             <form class="form">
-                                <button data-modal-close class="btn-close">
+                                <button data-modal-close class="btn__close">
                                     <svg width="18" height="18">
                                         <use href="./images/icons.svg#close"></use>
                                     </svg>
                                 </button>
-                                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-                                    <div class="form-container">
-                                        <div class="form-field">
-                                            <label for="name" class="form-label">Имя</label>
-                                            <input type="text" name="name" id="name" class="form-input" autofocus />
-                                            <svg class="form-icon" width="18" height="18">
+                                <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
+                                    <div class="form__container">
+                                        <div class="form__field">
+                                            <label for="name" class="form__label">Имя</label>
+                                            <input type="text" name="name" id="name" class="form__input" autofocus />
+                                            <svg class="form__icon" width="18" height="18">
                                                 <use href="./images/icons.svg#icon-person-form"></use>
                                             </svg>
                                         </div>
-                                        <div class="form-field">
-                                            <label for="tel" class="form-label">Телефон</label>
-                                            <input type="tel" name="tel" id="tel" class="form-input" />
-                                            <svg class="form-icon" width="18" height="18">
+                                        <div class="form__field">
+                                            <label for="tel" class="form__label">Телефон</label>
+                                            <input type="tel" name="tel" id="tel" class="form__input" />
+                                            <svg class="form__icon" width="18" height="18">
                                                 <use href="./images/icons.svg#icon-phone-form"></use>
                                             </svg>
                                         </div>
-                                        <div class="form-field">
-                                            <label for="mail" class="form-label">Почта</label>
-                                            <input type="email" name="mail" id="mail" class="form-input" />
-                                            <svg class="form-icon" width="18" height="18">
+                                        <div class="form__field">
+                                            <label for="mail" class="form__label">Почта</label>
+                                            <input type="email" name="mail" id="mail" class="form__input" />
+                                            <svg class="form__icon" width="18" height="18">
                                                 <use href="./images/icons.svg#icon-email-form"></use>
                                             </svg>
                                         </div>
-                                        <div class="form-field">
-                                            <label for="comment" class="form-label">Комментарий</label>
-                                            <textarea name="comment" id="comment" rows="5" class="form-input form-comment" placeholder="Введите текст"></textarea>
+                                        <div class="form__field">
+                                            <label for="comment" class="form__label">Комментарий</label>
+                                            <textarea name="comment" id="comment" rows="5" class="form__input form__input--placing" placeholder="Введите текст"></textarea>
                                         </div>
                                     </div>
-                                        <label class="checkbox-label">
-                                            <input type="checkbox" name="policy" class="checkbox">
-                                            <span class="icon"></span>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="policy" class="checkbox__input">
+                                            <span class="checkbox__icon"></span>
                                         Соглашаюсь с рассылкой и принимаю 
-                                        <a href="" class="link link-contract">Условия договора</a>
+                                        <a href="" class="link checkbox__agreement">Условия договора</a>
                                         </label>
-                                <button type="submit" class="btn btn-form">Отправить</button>
+                                <button type="submit" class="btn form__btn">Отправить</button>
                             </form>
                         </div>
                     </div>
@@ -458,7 +458,7 @@
             <div class="send">
                 <p class="feature-title text-white">Подпишитесь на рассылку</p>
                 <form class="form-footer">
-                    <label for="email" class="form-label"></label>
+                    <label for="email" class="form__label"></label>
                     <input type="email" name="mail" id="email" class="form-input-footer" placeholder="E-mail"/>
                     <button type="submit" class="btn btn-send">Подписаться
                         <svg class="send-icon" width="24" height="24">
