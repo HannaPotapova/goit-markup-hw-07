@@ -19,23 +19,23 @@
 <body>
     <!--Шапка сайта-->
     <header class="page-header">
-        <nav class="container main-nav">
-            <a href="" class="link logo logo-header">Web<span class="accent-header">Studio</span></a>
-            <ul class="site-nav link">
-                <li class="list"><a href="" class="link current">Студия</a></li>
-                <li class="list"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li class="list"><a href="" class="link">Контакты</a></li>
+        <nav class="container navigation">
+            <a href="" class="link navigation__logo logo">Web<span class="navigation__text">Studio</span></a>
+            <ul class="site-nav">
+                <li class="site-nav__item item"><a href="" class="site-nav__link link current">Студия</a></li>
+                <li class="site-nav__item item"><a href="./portfolio.html" class="site-nav__link link">Портфолио</a></li>
+                <li class="site-nav__item item"><a href="" class="site-nav__link link">Контакты</a></li>
             </ul>
-            <ul class="connection link">
-                <li class="list">
-                    <a href="mailto:info@devstudio.com" class="link">
-                        <svg class="connection-icons" width="16" height="12">
+            <ul class="connection">
+                <li class="connection__item item">
+                    <a href="mailto:info@devstudio.com" class="connection__link link">
+                        <svg class="connection__icons" width="16" height="12">
                         <use href="./images/icons.svg#envelope"></use>
                     </svg>info@devstudio.com</a>
                 </li>
-                <li class="list">
-                    <a href="tel:+380961111111" class="link">
-                        <svg class="connection-icons" width="10" height="16">
+                <li class="connection__item item">
+                    <a href="tel:+380961111111" class="connection__link link">
+                        <svg class="connection__icons" width="10" height="16">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
@@ -103,7 +103,7 @@
                         <h2 class="section-title visually-hidden">Наши преимущества</h2>
                         <!--Визуально спрячется-->
                         <ul class="feature-list">
-                            <li class="list list-item">
+                            <li class="item list-item">
                                 <div class="icons-feature">
                                     <svg width="70" height="70">
                                         <use href="./images/icons.svg#antenna"></use>
@@ -112,7 +112,7 @@
                                 <h3 class="feature-title">Внимание к деталям</h3>
                                 <p class="title">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                             </li>
-                            <li class="list list-item">
+                            <li class="item list-item">
                                 <div class="icons-feature">
                                     <svg width="70" height="70">
                                         <use href="./images/icons.svg#clock"></use>
@@ -121,7 +121,7 @@
                                 <h3 class="feature-title">Пунктуальность</h3>
                                 <p class="title">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                             </li>
-                            <li class="list list-item">
+                            <li class="item list-item">
                                 <div class="icons-feature">
                                     <svg width="70" height="70">
                                         <use href="./images/icons.svg#diagram"></use>
@@ -130,7 +130,7 @@
                                 <h3 class="feature-title">Планирование</h3>
                                 <p class="title">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                             </li>
-                            <li class="list list-item">
+                            <li class="item list-item">
                                 <div class="icons-feature">
                                     <svg width="70" height="70">
                                         <use href="./images/icons.svg#astronaut"></use>
@@ -148,17 +148,17 @@
                     <div class="container">
                         <h2 class="section-title">Чем мы занимаемся</h2>
                         <ul class="photo-work">
-                            <li class="list">
+                            <li class="item">
                                 <img class="card-image no-gap" src="./images/general/box1.jpg" 
                                     alt="фото написания программного кода" width="370" height="294">
                                 <p class="case-title">Десктопные приложения</p>
                             </li>
-                            <li class="list">
+                            <li class="item">
                                 <img class="card-image no-gap" src="./images/general/box2.jpg" 
                                     alt="фото с телефоном в руке" width="370" height="294">
                                 <p class="case-title">Мобильные приложения</p>
                             </li>
-                            <li class="list">
+                            <li class="item">
                                 <img class="card-image no-gap" src="./images/general/box3.jpg" 
                                     alt="фото планшета с цветовой палитрой" width="370" height="294">
                                 <p class="case-title">Дизайнерские решения</p>
@@ -172,13 +172,13 @@
                     <div class="container">
                         <h2 class="section-title team">Наша команда</h2>
                         <ul class="team-list">
-                            <li class="list card-team">
+                            <li class="item card-team">
                                 <img src="./images/general/demyanenko.jpg" alt="фото Игоря Демьяненко" width="270" height="260"
                                     class="team-foto">
                                 <div class="title-in-card">
                                     <h3 class="team-name">Игорь Демьяненко</h3>
                                     <p class="title">Product Designer</p>
-                                    <ul class="social list">
+                                    <ul class="social item">
                                         <li class="social-item">
                                             <a href="" target="_blank" rel="noopener noreferrer" 
                                             class="social-network link" aria-label="иконка instagram">
@@ -215,13 +215,13 @@
                                 </div>
                                 
                             </li>
-                            <li class="list card-team">
+                            <li class="item card-team">
                                 <img src="./images/general/repina.jpg" alt="фото Ольги Репиной" width="270" height="260"
                                     class="team-foto">
                                 <div class="title-in-card">
                                     <h3 class="team-name">Ольга Репина</h3>
                                     <p class="title">Frontend Developer</p>
-                                    <ul class="social list">
+                                    <ul class="social item">
                                         <li class="social-item">
                                             <a href="" target="_blank" rel="noopener noreferrer" 
                                             class="social-network link" aria-label="иконка instagram">
@@ -257,13 +257,13 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="list card-team">
+                            <li class="item card-team">
                                 <img src="./images/general/tarasov.jpg" alt="фото Николая Тарасова" width="270" height="260"
                                     class="team-foto">
                                 <div class="title-in-card">
                                     <h3 class="team-name">Николай Тарасов</h3>
                                     <p class="title">Marketing</p>
-                                    <ul class="social list">
+                                    <ul class="social item">
                                         <li class="social-item">
                                             <a href="" target="_blank" rel="noopener noreferrer" 
                                             class="social-network link" aria-label="иконка instagram">
@@ -299,13 +299,13 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="list card-team">
+                            <li class="item card-team">
                                 <img src="./images/general/ermakov.jpg" alt="фото Михаила Ермакова" width="270" height="260"
                                     class="team-foto">
                                 <div class="title-in-card">
                                     <h3 class="team-name">Михаил Ермаков</h3>
                                     <p class="title">UI Designer</p>
-                                    <ul class="social list">
+                                    <ul class="social item">
                                         <li class="social-item">
                                             <a href="" target="_blank" rel="noopener noreferrer" 
                                             class="social-network link" aria-label="иконка instagram">
@@ -349,7 +349,7 @@
                 <section class="section">
                     <div class="container">
                         <h2 class="section-title">Постоянные клиенты</h2>
-                        <ul class="list client">
+                        <ul class="item client">
                             <li class="item-company">
                                 <a href="" target="_blank" rel="noopener noreferrer" 
                                 class="logo-company link" aria-label="логотип Ya&Co">
@@ -409,18 +409,18 @@
         <div class="container container-footer">
             <div class="logo-distance">
                 <a href="" class="link logo logo-footer">Web<span class="accent-footer">Studio</span></a>
-                <address class="footer-bottom list-distance">
+                <address class="footer-bottom item-distance">
                     г. Киев, пр-т Леси Украинки, 26<br />
                 </address>
             
                 <ul class="connection-footer link">
-                    <li class="list list-distance"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                    <li class="list list-distance"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                    <li class="item list-distance"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                    <li class="item list-distance"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
                 </ul>
             </div>
             <div>
                 <p class="feature-title text-white">присоединяйтесь</p>
-                <ul class="social list">
+                <ul class="social item">
                     <li class="social-item">
                         <a href="" target="_blank" rel="noopener noreferrer" 
                         class="social-network social-footer link" aria-label="иконка instagram">
