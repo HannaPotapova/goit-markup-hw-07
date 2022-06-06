@@ -1,9 +1,25 @@
 .send {
     margin-left: 93px;
-}
 
-.send__form {
-    display: flex;
+    &__form {
+        display: flex;
+    }
+
+    &__icon {
+        fill: var(--white-text-color);
+        margin-left: 10px;
+    }
+        
+    &__btn {
+        margin-left: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 28px;
+        padding-left: 29px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .send__input {
@@ -15,30 +31,16 @@
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-}
-.send__input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-}
 
-.send__input:focus {
-    outline: none;
-    border: 1px solid #2196F3;
-    cursor: pointer;
-}
-.send__icon {
-    fill: var(--white-text-color);
-    margin-left: 10px;
-}
-
-.send__btn {
-    margin-left: 12px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 28px;
-    padding-left: 29px;
-    display: flex;
-    text-align: center;
-    align-items: center;
+        &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    
+        &:focus {
+            outline: none;
+            border: 1px solid #2196F3;
+            cursor: pointer;
+        }
 }

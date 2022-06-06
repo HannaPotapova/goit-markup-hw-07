@@ -1,12 +1,13 @@
 .page-header {
     position: relative;
     border-bottom: 1px solid #ECECEC;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
 }
 
-.page-header__nav {
-    display: flex;
-    align-items: center;
-}
 .site-nav,
 .connection {
     font-weight: 500;
@@ -22,6 +23,27 @@
 .site-nav__link {
     color: var(--primary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.current::after {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background: var(--btn-bg-color);
+        border-radius: 2px;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+
+    &.current {
+        color: var(--accent-text-color);
+    }
 }
 .site-nav__link,
 .connection__link {
@@ -41,47 +63,35 @@
     align-items: center;
     color: var(--title-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
 }
 .site-nav__item {
     position: relative;
-}
 
-.site-nav__item:not(:last-child) {
-    margin-right: 50px;
-}
-.connection__item:not(:last-child) {
-    margin-right: 30px;
-}
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
 
-.site-nav__link.current::after {
-    display: inline-block;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background: var(--btn-bg-color);
-    border-radius: 2px;
-}
-.site-nav__link:hover,
-.site-nav__link:focus {
-    color: var(--accent-text-color);
-}
-
-.site-nav__link.current {
-    color: var(--accent-text-color);
-}
-.connection__icons:hover,
-.connection__icons:focus {
-    color: var(--accent-text-color);
-}
-
-.connection__link:hover,
-.connection__link:focus {
-    color: var(--accent-text-color);
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .connection__icons {
     fill: currentColor;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
+
+.connection__item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
